@@ -52,16 +52,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbo-pY-F3e">
-                                <rect key="frame" x="200" y="60" width="200" height="239"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbo-pY-F3e">
+                                <rect key="frame" x="200" y="104" width="200" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a sample emoji of a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDI-eB-cXj">
-                                <rect key="frame" x="190" y="349" width="307" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a sample emoji of a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDI-eB-cXj">
+                                <rect key="frame" x="146.5" y="393" width="307" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBF-RR-dyj">
+                                <rect key="frame" x="265" y="441" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CatgoryLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1E-2Y-WI0">
+                                <rect key="frame" x="232" y="482" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -69,11 +81,17 @@
                         <constraints>
                             <constraint firstItem="BDI-eB-cXj" firstAttribute="top" secondItem="Pbo-pY-F3e" secondAttribute="bottom" constant="50" id="1iZ-uT-BTr"/>
                             <constraint firstItem="BDI-eB-cXj" firstAttribute="centerX" secondItem="Q3r-KX-xw9" secondAttribute="centerX" id="7bG-aQ-bxt"/>
+                            <constraint firstItem="V1E-2Y-WI0" firstAttribute="top" secondItem="VBF-RR-dyj" secondAttribute="bottom" constant="20" id="FNX-dq-tKu"/>
                             <constraint firstItem="Pbo-pY-F3e" firstAttribute="top" secondItem="IsI-7D-4D9" secondAttribute="bottom" constant="40" id="Pyg-eT-8Nt"/>
+                            <constraint firstItem="V1E-2Y-WI0" firstAttribute="centerX" secondItem="Q3r-KX-xw9" secondAttribute="centerX" id="SzO-87-rcV"/>
+                            <constraint firstItem="VBF-RR-dyj" firstAttribute="centerX" secondItem="Q3r-KX-xw9" secondAttribute="centerX" id="Zew-5k-SEI"/>
                             <constraint firstItem="Pbo-pY-F3e" firstAttribute="centerX" secondItem="Q3r-KX-xw9" secondAttribute="centerX" id="feM-AD-TwL"/>
+                            <constraint firstItem="VBF-RR-dyj" firstAttribute="top" secondItem="BDI-eB-cXj" secondAttribute="bottom" constant="27" id="zhY-5U-yj8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="VBF-RR-dyj" id="TFm-8L-4qo"/>
+                        <outlet property="categoryLabel" destination="V1E-2Y-WI0" id="W4r-YL-vjJ"/>
                         <outlet property="defineLabel" destination="BDI-eB-cXj" id="VWJ-4H-Hhk"/>
                         <outlet property="emojiLabel" destination="Pbo-pY-F3e" id="R2b-si-aOT"/>
                     </connections>
